@@ -33,7 +33,7 @@ public class RomanNumeralShould {
             "8,VIII","80,LXXX",
             "9,IX","90,XC"
     })
-    public void translate_properly(int decimalNumber, String romanNumber) {
+    public void translateProperly(int decimalNumber, String romanNumber) {
         assertThat(romanNumeral.translateFromDecimal(decimalNumber)).isEqualTo(romanNumber);
     }
 }
