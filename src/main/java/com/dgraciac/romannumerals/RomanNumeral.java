@@ -26,9 +26,6 @@ public class RomanNumeral {
         } else if (decimalNumber < 4000) {
             stringBuilder.append(ROMAN_THOUSAND).append(ROMAN_THOUSAND).append(ROMAN_THOUSAND);
             if (decimalNumber > 3000) translateFromDecimalLesserThan1000(decimalNumber - 3000);
-        } else {
-            stringBuilder.append(ROMAN_THOUSAND).append(ROMAN_THOUSAND).append(ROMAN_THOUSAND).append(ROMAN_THOUSAND);
-            if (decimalNumber > 4000) translateFromDecimalLesserThan1000(decimalNumber - 4000);
         }
         return stringBuilder.toString();
     }

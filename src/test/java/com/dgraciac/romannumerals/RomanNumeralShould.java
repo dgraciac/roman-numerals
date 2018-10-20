@@ -36,8 +36,7 @@ public class RomanNumeralShould {
             "901,CMI", "999,CMXCIX", "1000,M",
             "1001,MI", "1999,MCMXCIX", "2000,MM",
             "2001,MMI", "2999,MMCMXCIX", "3000,MMM",
-            "3001,MMMI", "3999,MMMCMXCIX", "4000,MMMM",
-            "4001,MMMMI", "4999,MMMMCMXCIX"
+            "3001,MMMI", "3888,MMMDCCCLXXXVIII", "3999,MMMCMXCIX"
     })
     public void translateProperly(int decimalNumber, String romanNumber) {
         assertThat(romanNumeral.translateFromDecimal(decimalNumber)).isEqualTo(romanNumber);
